@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  font-family: "Azeret Mono", monospace;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  width: screen;
+   background-color: #313131;
+  background-image: url("./assets/asset\ 45.png");
+  background-size: contain;
+background-repeat: round;
+  padding: 48px;
+  color: #f5f5dc;
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
+}
+*::-webkit-scrollbar {
+  display: none;
+  
+}
