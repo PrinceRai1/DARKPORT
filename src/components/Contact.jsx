@@ -36,10 +36,19 @@ const Contact = () => {
             </li>
           </ul>
         </div>
-        <div className="border-1 rounded-lg text-black bg-white p-4">2</div>
-        <div className="border-1 rounded-lg text-black bg-white row-span-2 p-4">3</div>
-        <div className="border-1 rounded-lg text-black bg-white p-4">4</div>
-        <div className="border-1 rounded-lg text-black bg-white p-4">5</div>
+        <div className="border-1 rounded-lg text-white drop-shadow-2xl p-4 bg-img2 bg-cover hover:scale-105 z-10 text-center text-2xl font-medium transition-all">
+          Tech-Stack
+        </div>
+
+        <div className="border-1 text-white rounded-lg p-4 bg-img1 bg-cover hover:scale-105 z-10 text-center text-2xl font-medium transition-all">
+          My Project
+        </div>
+        <div className="border-1 rounded-lg text-white hover:scale-105 p-4 bg-img4 bg-cover z-10 text-center text-2xl font-medium transition-all">
+          About Me
+        </div>
+        <div className="border-1 rounded-lg text-white hover:scale-105 p-4 bg-img5 bg-cover z-10 text-center text-2xl font-medium transition-all">
+          Quick Learner
+        </div>
       </div>
     </div>
   );

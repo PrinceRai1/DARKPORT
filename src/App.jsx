@@ -11,11 +11,11 @@ function App() {
   return (
   <>
     <Header/>
-    <Heroicsection/>
-    <AboutMe/>
+    <Projects/>
     <Contact/>
     <MyStack/>
-    <Projects/>
+    <AboutMe/>
+    <Heroicsection/>
   </>
   );
 }
