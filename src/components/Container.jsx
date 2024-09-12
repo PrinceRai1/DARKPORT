@@ -2,19 +2,29 @@ import React from "react";
 import { PiLinkedinLogo } from "react-icons/pi";
 import { VscGithubInverted } from "react-icons/vsc";
 import { SiGmail } from "react-icons/si";
+import { useNavigate } from 'react-router-dom';
 
 const Container = (props) => {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    console.log("About Me button clicked");
+    navigate('/aboutme'); 
+  };
+
   return (
     <>
       <div className="flex flex-col w-1/3 h-screen p-4 gap-7 flex-wrap">
-        <p className="text-[#b3b3b3] text-base leading-6 text-pretty">
+        <p className="text-[#b3b3b3] text-base leading-6 text-ellipsis">
           {props.intro}
         </p>
+        {/* Updated button without href */}
         <button
           className="my-8 p-4 border-2 hover:tracking-widest rounded-full min-w-fit h-max hover:bg-[#080808d0] ease-linear transition-all"
-          href=""
+          onClick={handleClick}
         >
-          More AboutMe
+          More About Me
         </button>
         <section className="flex flex-row justify-around">
           <a
