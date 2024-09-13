@@ -1,27 +1,12 @@
 import React from "react";
 import Container from "./Container";
-import  { useState, useEffect } from "react";
 import AllImages from "./AllImages";
-import { RxCross2 } from "react-icons/rx";
-import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
 
 
 const MyStack = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [time, setTime] = useState(new Date());
-  useEffect(() => {
-    const timerID = setInterval(() => tick(), 1000);
-    return () => {
-      clearInterval(timerID);
-    };
-  }, []);
-  function tick() {
-    setTime(new Date());
-  }
-  const toggleNavbar = () => {
-    setIsOpen(!isOpen);
-  };
+ 
   return (
     <>
          <nav className="h-20 w-auto flex flex-row gap-8">
@@ -37,32 +22,7 @@ const MyStack = () => {
           </section>
         </div>
 
-        <div className="rounded-full w-screen h-20 bg-[#080808d0] relative">
-          <h2 className="float-left absolute top-7 left-6">
-            {time.toLocaleTimeString()} {time.getDate()}-{time.getMonth()}-
-            {time.getFullYear()}
-          </h2>
-          <button
-            className="rounded-full border-1 border-white p-2 absolute right-4 bottom-3"
-            onClick={toggleNavbar}
-          >
-            {isOpen ? (
-              <RxCross2 className="w-10 h-10 text-base" />
-            ) : (
-              <HiOutlineMenuAlt4 className="w-10 h-10 text-base" />
-            )}
-            {isOpen && (
-              <div className="min-w-max max-h-max bg-[#2c2a2a] rounded-2xl p-4 absolute right-0 top-20 z-10 ">
-                <ul>
-                  <li className="p-4 mx-12">About Me</li>
-                  <li className="p-4 m-2">Stack</li>
-                  <li className="p-4 m-2">Project </li>
-                  <li className="p-4 m-2">Contact</li>
-                </ul>
-              </div>
-            )}
-          </button>
-        </div>
+     <Navbar/>
       </nav>
     <div className="flex flex-row w-auto h-auto gap-4 overflow-hidden">
       <Container intro="Welcome to a showcase of my creative endeavors! Dive into a curated collection of my projects, each crafted with passion and precision. From web development, each project tells a unique story of innovation and dedication." />
