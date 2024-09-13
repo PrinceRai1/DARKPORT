@@ -4,6 +4,7 @@ import  { useState, useEffect } from "react";
 import AllImages from "./AllImages";
 import { RxCross2 } from "react-icons/rx";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 
 const AboutMe = () => {
@@ -94,19 +95,21 @@ const AboutMe = () => {
               </li>
             </ul>
           </div>
-          <div className="border-1 rounded-lg text-white drop-shadow-2xl p-4 bg-img2 bg-cover hover:scale-105 z-10 text-center text-2xl font-medium transition-all">
+          <Link to="/mystack"  className="w-auto flex items-center justify-center h-30 border-1 rounded-lg text-white drop-shadow-2xl p-4 bg-img2 bg-cover hover:scale-105 z-10 text-center text-2xl font-medium transition-all">
             Tech-Stack
-          </div>
+          </Link>
 
-          <div className="border-1 text-white rounded-lg p-4 bg-img3 bg-cover hover:scale-105 z-10 text-center text-2xl font-medium transition-all">
-            Conatct
-          </div>
-          <div className="border-1 rounded-lg text-white hover:scale-105 p-4 bg-img4 bg-cover z-10 text-center text-2xl font-medium transition-all">
-            About Me
-          </div>
-          <div className="border-1 rounded-lg text-white hover:scale-105 p-4 bg-img5 bg-cover z-10 text-center text-2xl font-medium transition-all">
-            Quick Learner
-          </div>
+          <Link to="/contact" className="border-1 flex items-center justify-center text-white rounded-lg p-4 bg-img3 bg-cover hover:scale-105 z-10 text-center text-2xl font-medium transition-all">
+            Contact Me
+          </Link>
+
+          <Link to="/projects" className="border-1 flex items-center justify-center text-white rounded-lg p-4 bg-img1 bg-cover hover:scale-105 z-10 text-center text-2xl font-medium transition-all">
+            My Project
+          </Link>
+
+          <Link to="/" className="border-1 flex items-center justify-center text-white rounded-lg p-4 bg-img5 bg-cover hover:scale-105 z-10 text-center text-2xl font-medium transition-all">
+          Quick Learner
+          </Link>
         </div>
       </div>
     </>
