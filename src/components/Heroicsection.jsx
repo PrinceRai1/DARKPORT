@@ -15,7 +15,7 @@ const Heroicsection = () => {
         <Link to="contact" className="border-1 text-white rounded-lg p-4 flex items-center justify-center bg-img3 bg-cover hover:scale-105 z-10 text-center text-2xl font-medium transition-all">
           <div>Conatct</div>
         </Link>
-        <Link className="border-1 rounded-lg col-span-2 ml-2 text-white hover:scale-105 flex items-center justify-center bg-img4 bg-cover z-10   text-2xl text-center font-medium transition-all">
+        <Link to="/aboutme" className="border-1 rounded-lg col-span-2 ml-2 text-white hover:scale-105 flex items-center justify-center bg-img4 bg-cover z-10   text-2xl text-center font-medium transition-all">
            <div>About Me</div>
         </Link>
         <Link to="/" className="border-1 rounded-lg text-white flex items-center justify-center hover:scale-105 p-4 bg-img5 bg-cover z-10 text-center text-2xl font-medium transition-all">
